@@ -1,0 +1,60 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SistemaVendasLojaTreino01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("------------ Bem vindo a NewStore Shoes ------------");
+
+            Console.WriteLine("Primeirmamente para darmos inicio a sua compra vamos fazer o seu cadastro.");
+
+            Console.Write("Digite o seu nome: ");
+
+            string nome = Console.ReadLine();
+
+            Console.Write("Olá " + nome + " tudo bem? ");
+            Console.ReadLine();
+
+            Console.Write("Oque te trás até nossa loja? ");
+            Console.ReadLine();
+
+            Console.Write("Perfeito, temos os dois modelos que você está querendo, quer experimentar? ");
+            Console.ReadLine();
+
+            double tenis = 199.90d;
+            double bermuda = 79.90d;
+            string credito = "1600";
+
+            Console.Write("Eai gostou? Vamos levar? ");
+            Console.ReadLine();
+
+            Console.WriteLine("O valor do tenis está a: " + tenis);
+
+            Console.WriteLine("O valor da bermuda está a: " + bermuda);
+
+            Console.Write("Você já tem o cartão da loja? ");
+            Console.ReadLine();
+
+            Console.Write("Qual o limite que você tem conosco? ");
+            Console.ReadLine();
+            int limite = int.Parse(credito);
+           
+            double resultado = (limite) - bermuda - tenis;
+
+            Console.WriteLine("Otimo com esse limite você pode fazer sua compra e ainda sobrar para uma próxima compra!");
+            Console.ReadLine();
+
+            Console.WriteLine("Biiiip, seu cartão foi autorizado e sua compra foi finalizada!");
+            Console.ReadLine();
+
+            Console.WriteLine("Seu cartão se encontra com: " + resultado + " de limite. Passar bem e tenha um ótimo dia senhor " + nome);
+            Console.ReadKey();
+        }
+    }
+}
